@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(".header-include").load("views/header/header.html");
+            $(".footer-include").load("views/footer/footer.html");
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/trm8imo.css">
+    <link rel="stylesheet" href="../../styles/css/reset.css">
+    <link rel="stylesheet" href="../../styles/css/index.css">
+</head>
+
+<body>
+    <div class="header-include"></div>
+
+    <section class="donation1" id="donation1">
+        <div class="wrap">
+            <div class="block-donation1">
+                <form action="donate" class="block-donation1-form">
+                    <h1 class="block-donation1__title">
+                        Choose a donation amount
+                    </h1>
+                    <div class="block-donation1-form-price right">
+                        <div class="block-donation1-form-price__item active">
+                            <input type="radio" name="price" id="price1" checked>
+                            <label for="price1">
+                                $10
+                                <span>Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Vitae
+                                    vestibulum.</span>
+                            </label>
+                        </div>
+                        <div class="block-donation1-form-price__item">
+                            <input type="radio" name="price" id="price2">
+                            <label for="price2">
+                                $25
+                                <span>Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Vitae
+                                    vestibulum.</span>
+                            </label>
+                        </div>
+                        <div class="block-donation1-form-price__item">
+                            <input type="radio" name="price" id="price3">
+                            <label for="price3">
+                                $50
+                                <span>Aliquam sed nisl porttitor nisl laoreet semper nec iaculis nibh. Vitae
+                                    vestibulum.</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <h1 class="block-donation1-form__title">
+                        Choose a donation frequency
+                    </h1>
+                    <div class="block-donation1-form-frequency right">
+                        <div class="block-donation1-form-frequency__item">
+                            <input type="radio" name="frequency" id="frequency1">
+                            <label for="frequency1">
+                                Monthly
+                            </label>
+                        </div>
+                        <div class="block-donation1-form-frequency__item active">
+                            <input type="radio" name="frequency" id="frequency2" checked>
+                            <label for="frequency2">
+                                One time
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block-donation1-form-nav">
+                        <a href="index.html" class="block-donation1-form-nav__link">
+                            Cancel
+                        </a>
+                        <a href="donation2.html" class="block-donation1-form-nav__button button">
+                            Go to checkout
+                        </a>
+                    </div>
+                </form>
+                <h1 class="block-donation1__heading">
+                    We can save the future
+                </h1>
+            </div>
+        </div>
+    </section>
+    <div class="footer-include"></div>
+    <script src="../../js/index.js"></script>
+</body>
+
+</html>

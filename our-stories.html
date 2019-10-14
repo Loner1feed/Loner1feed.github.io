@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            $(".header-include").load("views/header/header.html");
+            $(".footer-include").load("views/footer/footer.html");
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/trm8imo.css">
+    <link rel="stylesheet" href="../../styles/css/reset.css">
+    <link rel="stylesheet" href="../../styles/css/index.css">
+</head>
+<body>
+
+
+    <div class="header-include"></div>
+
+
+    <section class="stories" id="stories">
+        <div class="wrap">
+            <div class="block-stories">
+                <div class="block-stories-upper">
+                    <div class="block-stories-upper-menu">
+                        <h1 class="block-stories-upper-menu__title">
+                            stories of our work
+                        </h1>
+                        <div class="block-stories-upper-menu-items">
+                            <div class="block-stories-upper-menu-items__item active" id="1">
+                                clandine, nigeria
+                            </div>
+                            <div class="block-stories-upper-menu-items__item" id="2">
+                                zainab, nigeria
+                            </div>
+                            <div class="block-stories-upper-menu-items__item" id="3">
+                                cartias, rwanda
+                            </div>
+                            <div class="block-stories-upper-menu-items__item" id="4">
+                                eupharise, rwanda
+                            </div>
+                            <div class="block-stories-upper-menu-items__item" id="5">
+                                unis, sudan
+                            </div>
+                            <div class="block-stories-upper-menu-items__item" id="6">
+                                regina, sudan
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../../img/stories-upper.png" alt="" class="block-stories-upper__img">
+                </div>
+                <div class="block-stories-lower">
+                    <div class="block-stories-lower-plate">
+                        <div class="block-stories-lower-plate-upper">
+                            <p class="block-stories-lower-plate-upper__text">
+                                "Donec felis nunc, cursus molestie odio ut, aliquet euismod libero. Etiam ipsum nibh, interdum et consequat et, tincidunt quis sem. Suspendisse lobortis rises et.”
+                            </p>
+                            
+                        </div>
+                        <img src="../../img/stories-lower.png" alt="" class="block-stories-lower-plate__img">
+                    </div>
+                    <div class="block-stories-lower-desc">
+                        <h1 class="block-stories-lower-desc__title">
+                            clandine, nigeria
+                        </h1>
+                        <p class="block-stories-lower-desc__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec aliquet nunc, id consectetur lorem. Donec pretium est sed ornare bibendum. In tincidunt lacus vitae ullamcorper euismod. Praesent laoreet dui mattis, consectetur elit at, tincidunt magna. Aenean feugiat arcu ante, id pharetra tortor accumsan ut.
+                        </p>
+                        <p class="block-stories-lower-desc__text">
+                            Aliquam pellentesque nulla congue aliquam viverra. Ut cursus sollicitudin metus nec tristique. Sed eget elementum quam, non mollis orci. Aliquam dignissim, augue ac pretium suscipit, eros enim fermentum ante, et congue lectus metus nec dui. Nunc et ipsum aliquam, sodales mi eu, varius odio. Proin porta nulla nec ex blandit, nec ornare lorem ullamcorper.
+                        </p>
+                        <a class="block-stories-lower-desc__button button">
+                            Next story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-include"></div>
+    <script src="../../js/index.js"></script>
+    
+</body>
+</html>
