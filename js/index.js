@@ -1,87 +1,70 @@
-function active(str) {
-    $(str).click(function(){
-        $(str).removeClass('active');
-        $(this).addClass('active');
+$(document).ready(function () {
+    $('.headSlider-slider-wrap').slick({
+        infinite: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true,
     });
-}
 
+    width = $(window).width();
+    if (width < 1100) {
+        $('.block-courses-cards').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed: 5000,
+            dots: true
+        });
 
-
-active('.block-modules-heading-switch__item');
-
-var id = 1;
-var strid;
-
-$('.block-stories-lower-desc__button').click(function(){
-    if(id >= 6){
-        id = 0;
+        $('.block-teachers-cards').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            centerMode: true,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            }]
+        });
     }
-    id++;
-    strId = String(id);
-    $('.block-stories-upper-menu-items__item').removeClass('active');
-    $('#' + strId).addClass('active');
 
-
-
-    var s;
-    s = $('#' + strId).html();
-    $('.block-stories-upper__img, .block-stories-lower').fadeOut(function(){
-        $('.block-stories-lower-desc__title').html(s);
-        $('.block-stories-upper__img, .block-stories-lower').fadeIn()
-    });
-});
-
-
-
-$('.block-stories-upper-menu-items__item').click(function(){
-    
-    id = $(this).attr('id');
-    strId = String(id);
-    $('.block-stories-upper-menu-items__item').removeClass('active');
-    $('#' + strId).addClass('active');
-    var s;
-    s = $('#' + strId).html();
-    $('.block-stories-upper__img, .block-stories-lower').fadeOut(function(){
-        $('.block-stories-lower-desc__title').html(s);
-        $('.block-stories-upper__img, .block-stories-lower').fadeIn()
-    });
-});
-
-$('#all').click(function(){
-    $('.block-modules-grid').fadeOut(function(){
-        $('.block-modules-grid-item_small').show();
-        $('.block-modules-grid-item_big').show(function(){
-            $('.block-modules-grid').fadeIn();
-        });
-    });
-});
-
-$('#events').click(function(){
-    $('.block-modules-grid').fadeOut(function(){
-        $('.block-modules-grid-item_small').hide();
-        $('.block-modules-grid-item_big').show(function(){
-            $('.block-modules-grid').fadeIn();
-        });
-    });
-});
-
-$('#news').click(function(){
-    $('.block-modules-grid').fadeOut(function(){
-        $('.block-modules-grid-item_small').show();
-        $('.block-modules-grid-item_big').hide(function(){
-            $('.block-modules-grid').fadeIn()
-        });
-    });
-    
-});
-
-
-$('#price1, #price2, #price3').change(function(){
-    $('#price1, #price2, #price3').parent().removeClass('active');
-    $(this).parent().addClass('active');
-});
-
-$('#frequency1, #frequency2').change(function(){
-    $('#frequency1, #frequency2').parent().removeClass('active');
-    $(this).parent().addClass('active');
+    $('.block-clients-slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.block-clients-slider-nav'
+      });
+      $('.block-clients-slider-nav').slick({
+        slidesToShow: 5,
+        infinite: true,
+        arrows: true,
+        slidesToScroll: 1,
+        asNavFor: '.block-clients-slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+      });
 });
