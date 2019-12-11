@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.headSlider-slider-wrap').slick({
         infinite: true,
         autoplay: true,
-        speed: 1000,
+        speed: 500,
         autoplaySpeed: 5000,
         arrows: false,
         dots: true,
@@ -15,7 +15,7 @@ $(document).ready(function () {
             slidesToScroll: 1,
             infinite: true,
             autoplay: true,
-            speed: 1000,
+            speed: 500,
             autoplaySpeed: 5000,
             dots: true
         });
