@@ -1,2 +1,24 @@
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 30px; } }
+
+@media screen and (max-width: 650px) {
+  .title {
+    font-size: 25px; } }
+
+@media screen and (max-width: 530px) {
+  .title {
+    font-size: 20px;
+    line-height: 35px; }
+  .subtitle {
+    font-size: 14px; } }
+
+@media screen and (max-width: 340px) {
+  .title {
+    font-size: 18px;
+    line-height: 25px; }
+  .subtitle {
+    font-size: 12px;
+    line-height: 20px; } }
 
 /*# sourceMappingURL=fonts.css.map */

@@ -1,2 +1,69 @@
+@media screen and (max-width: 1120px) {
+  .plates {
+    flex-direction: column;
+    text-align: center; }
+  .item__logo {
+    margin: 0;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 1000px) {
+  .about__wrap {
+    flex-direction: column; }
+  .text__title {
+    text-align: center; }
+  .text__subtitle {
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column; }
+    .menu__item {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 640px) {
+  .list {
+    flex-direction: column; }
+    .list__item {
+      height: 38px;
+      line-height: 38px; }
+  .content {
+    min-height: calc(100vh - 500px);
+    height: calc(100vh - 500px); }
+  .title,
+  .subtitle {
+    text-align: center; }
+  .accent {
+    margin: 0px auto; }
+  .head {
+    flex-wrap: wrap; }
+  .specialize {
+    background-size: auto 500px; }
+    .specialize__item {
+      justify-content: center; }
+  .button {
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px; }
+  .form__button {
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px; } }
+
+@media screen and (max-width: 480px) {
+  .form {
+    flex-direction: column; }
+    .form__input {
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px; }
+    .form__button {
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+      height: 35px;
+      font-size: 14px;
+      line-height: 35px; }
+  .subscribe h3 {
+    text-align: center; }
+  .subscribe__label {
+    text-align: center; } }
 
 /*# sourceMappingURL=media.css.map */
