@@ -48,8 +48,11 @@
   .logo {
     justify-content: flex-start; }
     .logo__title {
-      display: none; } }
+      display: none; }
+    .team__item{
+      min-width: 250px; } }
 
+  
 @media screen and (max-width: 400px) {
   .title {
     font-size: 1.5em; }
