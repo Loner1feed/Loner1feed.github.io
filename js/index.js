@@ -63,3 +63,17 @@ $('#resume').hover(function(){
 });
 
 
+$(window).scroll(function(){
+    if ( $(this).scrollTop() > $('#ps').offset().top - 600 ) {
+        $('#ps').addClass('ps-anim');
+    }
+    if ( $(this).scrollTop() > $('#html').offset().top - 700 ) {
+        $('#html').addClass('html-anim');
+    }
+    if ( $(this).scrollTop() > $('#css').offset().top - 800 ) {
+        $('#css').addClass('css-anim');
+    }
+    if ( $(this).scrollTop() > $('#js').offset().top - 900 ) {
+        $('#js').addClass('js-anim');
+    }
+});
