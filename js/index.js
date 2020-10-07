@@ -77,3 +77,7 @@ $(window).scroll(function(){
         $('#js').addClass('js-anim');
     }
 });
+
+$('.resume__button').click(function(){
+    $('.resume__paragraph').addClass('resume__paragraph--active')
+})
